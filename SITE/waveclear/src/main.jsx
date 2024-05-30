@@ -24,8 +24,6 @@ const router = createBrowserRouter([
       { path: 'equipe', element: <Equipe/>},
       { path: 'contato', element: <Contato/>},
       { path: '*',element: <PageNotFound/>},
-      
-
     ]
   }
 ]);
