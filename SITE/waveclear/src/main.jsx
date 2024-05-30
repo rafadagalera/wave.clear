@@ -9,6 +9,7 @@ import Problema from './pages/problema.jsx';
 import Home from './pages/home.jsx'
 import PageNotFound from './pages/pageNotFound.jsx';
 import {createBrowserRouter, RouterProvider,Link} from 'react-router-dom'
+import Contato from './pages/contato.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,11 +18,13 @@ const router = createBrowserRouter([
     children: [
       
       { index: true, element: <Home/>},
-      { path: 'equipe', element: <Equipe/>},
-      { path: 'previsao', element: <Previsao/>},
-      { path: 'solucao', element: <Solucao/>},
       { path: 'problema', element: <Problema/>},
-      {path: '*',element: <PageNotFound/>},
+      { path: 'solucao', element: <Solucao/>},
+      { path: 'previsao', element: <Previsao/>},
+      { path: 'equipe', element: <Equipe/>},
+      { path: 'contato', element: <Contato/>},
+      { path: '*',element: <PageNotFound/>},
+      
 
     ]
   }
