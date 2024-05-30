@@ -5,21 +5,14 @@ import name from '../assets/name.png'
 
 function Header() {
     return (
-        <>
-            <div className="flex justify-between items-center bg-nav-bg md:flex md:flex-col md:absolute md:h-screen md:w-24 md:justify-normal md:pb-0">
-                <img className="md:hidden w-20 h-20 "
-                src={fullLogo}
-                alt="logo completo wave.clear"/>
-                <img className= "hidden md:flex md:pt-3"
-                src={name} 
-                alt="name wave.clear"/>
-                <Navbar />
-                <img className="hidden md:flex md:bottom-0 "
-                src={logo}
-                alt="" />
-            </div>
-        </>
+        <div className="bg-nav-bg md:h-full md:fixed md:flex md:flex-col md:shadow-md md:w-28">
+            <img className="md:hidden w-20 h-20" src={fullLogo} alt="logo completo wave.clear"/>
+            <img className="hidden md:flex md:pt-3" src={name} alt="name wave.clear"/>
+            <Navbar />
+            <img className="hidden md:flex md:bottom-0" src={logo} alt="" />
+        </div>
     );
 }
 
 export default Header;
+
