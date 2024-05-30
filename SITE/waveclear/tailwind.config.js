@@ -9,6 +9,7 @@ module.exports = {
       'tertiary-blue': '#3548AF',
       'quaternary-blue': '#152370',
       'primary-white': '#F0F0F0',
+      'primary-black': '#000000'
     },
     extend: {
       fontFamily: {

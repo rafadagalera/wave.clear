@@ -31,7 +31,7 @@ function Home() {
                 <div key={card.id} className="group relative box-border border-2 border-primary-white rounded-xl p-5">
                     <h2 className="text-3xl text-primary-white pb-3">{card.title}</h2>
                     <p className="text-xl text-primary-white">{card.description}</p>
-                    <button className="flex m-auto mt-4 box-border border-2 bg-button-blue text-primary-white h-14 w-44 items-center justify-center rounded-md"><Link to={card.link}>Saiba mais</Link></button>
+                    <button className="flex m-auto mt-4 box-border border-2 border-primary-black bg-button-blue text-primary-white h-14 w-44 items-center justify-center rounded-md"><Link to={card.link}>Saiba mais</Link></button>
                 </div>
             ))}
         </div>
