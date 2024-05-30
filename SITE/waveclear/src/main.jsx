@@ -7,6 +7,7 @@ import Previsao from './pages/previsao.jsx';
 import Solucao from './pages/solucao.jsx';
 import Problema from './pages/problema.jsx';
 import Home from './pages/home.jsx'
+import PageNotFound from './pages/pageNotFound.jsx';
 import {createBrowserRouter, RouterProvider,Link} from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
       { path: 'equipe', element: <Equipe/>},
       { path: 'previsao', element: <Previsao/>},
       { path: 'solucao', element: <Solucao/>},
-      { path: 'problema', element: <Problema/>}
+      { path: 'problema', element: <Problema/>},
+      {path: '*',element: <PageNotFound/>},
 
     ]
   }
