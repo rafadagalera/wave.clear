@@ -34,7 +34,7 @@ function Problema() {
             <div className="flex flex-col">
                 {sections.map((section) => (
                     <div key={section.id} className={`w-screen h-[1017px] ${section.bgColor} flex justify-between`}>
-                        <div className=' '>
+                        <div>
                             <h2 className='mt-[300px] ml-5 text-5xl font-bold mx-auto'>{section.title}</h2>
                             <div className='mt-[200px] grid grid-cols-2 gap-5 grid-rows-1'>
                                 <h3 className='row-start-1'>{section.subtitle}</h3>
