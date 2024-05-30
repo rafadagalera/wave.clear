@@ -1,7 +1,40 @@
+import { Link } from 'react-router-dom';
 function Home() {
+    const cards = [
+        {
+            id: 1,
+            title: "Abordando a questão em pauta: A saúde dos oceanos.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, turpis et luctus varius, sapien lacus porttitor sapien, sit amet tempus nisi justo et est. Curabitur pharetra ultricies pulvinar. Cras sit amet dapibus sem, nec hendrerit diam. Nulla eu diam ultrices, placerat ipsum at, posuere ligula.",
+            link: "/problema"
+        },
+        {
+            id: 2,
+            title: "Como combater o lixo antes mesmo de chegar aos oceanos.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, turpis et luctus varius, sapien lacus porttitor sapien, sit amet tempus nisi justo et est. Curabitur pharetra ultricies pulvinar. Cras sit amet dapibus sem, nec hendrerit diam. Nulla eu diam ultrices, placerat ipsum at, posuere ligula.",
+            link: "/solucao"
+        },
+        {
+            id: 3,
+            title: "Experiencie uma demonstração prática de nossa solução.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, turpis et luctus varius, sapien lacus porttitor sapien, sit amet tempus nisi justo et est. Curabitur pharetra ultricies pulvinar. Cras sit amet dapibus sem, nec hendrerit diam. Nulla eu diam ultrices, placerat ipsum at, posuere ligula.",
+            link: "/previsao"
+        }
+    ]
     return (  
         <>
-            <h1>Home</h1>
+        <div className='flex flex-col gap-4 mt-5'>
+            <h1 className='text-4xl m-auto'>Nós somos wave.clear</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, turpis et luctus varius, sapien lacus porttitor sapien, sit amet tempus nisi justo et est. Curabitur pharetra ultricies pulvinar. Cras sit amet dapibus sem, nec hendrerit diam. Nulla eu diam ultrices, placerat ipsum at, posuere ligula.</p>
+        </div>
+        <div className="mt-8 flex flex-col gap-8 mb-5">
+            {cards.map((card)=>(
+                <div key={card.id} className="group relative box-border border-2 border-primary-white rounded-xl p-5">
+                    <h2 className="text-3xl text-primary-white pb-3">{card.title}</h2>
+                    <p className="text-xl text-primary-white">{card.description}</p>
+                    <button className="flex m-auto mt-4 box-border border-2 bg-button-blue text-primary-white h-14 w-44 items-center justify-center rounded-md"><Link to={card.link}>Saiba mais</Link></button>
+                </div>
+            ))}
+        </div>
         </>
     );
 }

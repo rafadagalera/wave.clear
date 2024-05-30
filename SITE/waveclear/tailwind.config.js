@@ -3,7 +3,7 @@ module.exports = {
     colors:{
       'bg': '#129FEE',
       'nav-bg': 'rgb(3, 22, 192, 0.35)',
-      'button-blue': '#B7DE5',
+      'button-blue': '#0B7DE5',
       'primary-blue': '#0316C0',
       'secondary-blue': '#1C19D3',
       'tertiary-blue': '#3548AF',

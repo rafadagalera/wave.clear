@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer(){
     return(
-        <div className="w-screen h-10 bg-primary-white flex justify-between absolute bottom-0 md:hidden">
+        <div className="w-screen h-10 bg-primary-white flex justify-between static bottom-0 md:hidden">
             <img className="w-22 h-8 pt-3"
             src={name} 
             alt=""/>
