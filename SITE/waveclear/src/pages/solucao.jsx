@@ -2,7 +2,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 function Solucao() {
-    const solucaoCards = [
+    const cards = [
         {
             id: 1,
             title: 'Solução 1',
@@ -36,7 +36,6 @@ function Solucao() {
     ]
     return (
         <>
-            <h1>solucao</h1>
             <Carousel
                 additionalTransfrom={0}
                 arrows
@@ -90,7 +89,7 @@ function Solucao() {
                 slidesToSlide={1}
                 swipeable
             >
-                {solucaoCards.map((card) => (
+                {cards.map((card) => (
                     <div key={card.id} className={`${card.bgColor}`}>
                         <div>
                             <h2>{card.title}</h2>
