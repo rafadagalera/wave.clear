@@ -1,6 +1,6 @@
-import ocean1 from '../assets/ocean.png'
-import ocean2 from '../assets/poluicao.jpg'
-import ocean3 from '../assets/ocean3.jpg'
+import ocean1 from '../assets/ocean.png';
+import ocean2 from '../assets/poluicao.jpg';
+import ocean3 from '../assets/ocean3.jpg';
 
 function Problema() {
     const sections = [
@@ -21,29 +21,26 @@ function Problema() {
         {
             id: 3,
             title: "Como os lixos chegam ao oceano.",
-            
             text: "Os oceanos são os pulmões da Terra, sustentando a vida em nosso planeta de maneiras que muitas vezes subestimamos. Cobrindo mais de 70% da superfície da Terra, esses vastos corpos de água desempenham um papel crítico na regulação do clima global, na manutenção da biodiversidade e na sustentação de ecossistemas vitais. Além de sua imensidão física, os oceanos também abrigam uma riqueza incrível de vida, desde as mais minúsculas formas de vida até as majestosas baleias. Sua importância não se limita apenas ao ambiente marinho, mas também tem impactos significativos na economia global, na segurança alimentar e nas culturas humanas ao redor do mundo. Em última análise, os oceanos são essenciais para a saúde e o bem-estar de toda a vida na Terra, e protegê-los é uma responsabilidade que todos compartilhamos.",
             bgColor: 'bg-gradient-to-b from-primary-white via-primary-lightblue to-primary-white',
             img: ocean3
         }
-    ]
+    ];
     return (
         <>
             <div className="flex flex-col">
                 {sections.map((section ) => (
-                    <div key={section.id} className={`w-screen h-[1017px] ${section.bgColor} flex justify-between`}>
-                        <div className='w-3/4 m-auto mb-32'>
-                            <h2 className='mt-[150px] ml-5 text-5xl font-bold mx-auto'>{section.title}</h2>
-                            <div className='mt-[80px] ml-5 justify-center text-justify grid grid-cols-2 gap-5 grid-rows-1'>
+                    <div key={section.id} className={`w-screen h-[1017px] md:h-auto ${section.bgColor} flex justify-between`}>
+                        <div className='w-full md:w-3/4 m-auto mb-32'>
+                            <h2 className='mt-[150px] md:mt-16 ml-5 text-5xl md:text-3xl font-bold mx-auto'>{section.title}</h2>
+                            <div className='mt-[80px] md:mt-8 ml-5 md:ml-0 justify-center text-justify grid md:grid-cols-2 gap-5 grid-rows-1'>
 
-                                <div className='w-11/12 text-lg tracking-wide'>
-                                    <h3 className='row-start-1'>{section.subtitle}</h3>
-
-                                    <p className='col-start-1'>{section.text}</p>
+                                <div className='w-full md:w-11/12 text-lg md:text-base tracking-wide'>
+                                    <p className='md:col-start-1 mr-12'>{section.text}</p>
                                 </div>
                                 
                                 <img
-                                    className='w-[600px] h-[423px] object-cover rounded- '
+                                    className=' max-w-[600px] min-h-[300px] object-cover '
                                     src={section.img}
                                     alt={`imagem do oceano da seção ${section.title}`} />
                             </div>
