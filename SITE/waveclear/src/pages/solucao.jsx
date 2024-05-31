@@ -38,7 +38,6 @@ function Solucao() {
         <>
         <div className='w-full h-screen bg-secondary-blue'>
             <h2>wave.clear visa mudar a forma como pensamos no combate à poluição marítma</h2>
-
             <Carousel
                 additionalTransfrom={0}
                 arrows
