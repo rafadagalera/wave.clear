@@ -30,8 +30,8 @@ function Problema() {
         <>
             <div className="flex flex-col">
                 {sections.map((section ) => (
-                    <div key={section.id} className={`w-screen h-[1017px] md:h-auto ${section.bgColor} flex justify-between`}>
-                        <div className='w-full md:w-3/4 m-auto mb-32'>
+                    <div key={section.id} className={`w-screen md:h-auto ${section.bgColor} flex justify-between`}>
+                        <div className='w-full md:w-3/4 m-auto mb-3'>
                             <h2 className='mt-[150px] md:mt-16 ml-5 text-5xl md:text-3xl font-bold mx-auto'>{section.title}</h2>
                             <div className='mt-[80px] md:mt-8 ml-5 md:ml-0 justify-center text-justify grid md:grid-cols-2 gap-5 grid-rows-1'>
 
@@ -40,7 +40,7 @@ function Problema() {
                                 </div>
                                 
                                 <img
-                                    className=' max-w-[600px] min-h-[300px] object-cover '
+                                    className=' max-w-[600px] md:min-h-[300px] object-cover '
                                     src={section.img}
                                     alt={`imagem do oceano da seção ${section.title}`} />
                             </div>
