@@ -6,7 +6,7 @@ import name from '../assets/name.png'
 function Header() {
     return (
         <>
-            <div className="flex justify-between items-center bg-nav-bg md:flex md:flex-col md:absolute md:h-screen md:w-24 md:justify-normal md:pb-0">
+            <div className="flex justify-between p-14 items-center bg-nav-bg md:flex md:flex-col md:absolute md:h-screen md:w-24 md:justify-normal md:pb-0">
                 <img className="md:hidden w-20 h-20 "
                 src={fullLogo}
                 alt="logo completo wave.clear"/>
