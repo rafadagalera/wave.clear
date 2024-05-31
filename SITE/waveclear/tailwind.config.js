@@ -25,7 +25,8 @@ module.exports = {
         'quaternary-blue': '#152370',
         'primary-white': '#F0F0F0',
         'primary-gray': '#808080',
-        'primary-black': '#000000'
+        'primary-black': '#000000',
+        'primary-lightblue': '#9ACEEB'
       },
       fontFamily: {
         'overpass': ['Overpass', 'sans-serif'],
