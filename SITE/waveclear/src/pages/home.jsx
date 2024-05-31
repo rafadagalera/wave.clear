@@ -22,7 +22,7 @@ function Home() {
     ]
     return (  
         <>
-        <section className='bg-white h-screen'>   
+        <section className='bg-white'>   
 
             <div className='flex flex-col gap-4 mt-5 md:w-3/4 md:m-auto'>
                 <h1 className='text-6xl m-auto md:mt-20 text-teal-700'>Nós somos a <b>wave.clear</b></h1>

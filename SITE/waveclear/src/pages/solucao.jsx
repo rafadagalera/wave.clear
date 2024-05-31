@@ -36,6 +36,7 @@ function Solucao() {
     ]
     return (
         <>
+        <div className='w-full h-screen bg-slate-950'>
             <Carousel
                 additionalTransfrom={0}
                 arrows
@@ -44,11 +45,11 @@ function Solucao() {
                 className=""
                 containerClass="container"
                 dotListClass=""
-                draggable
+                draggable={false}
                 focusOnSelect={false}
                 infinite={false}
                 itemClass=""
-                keyBoardControl
+                keyBoardControl={false}
                 minimumTouchDrag={80}
                 pauseOnHover
                 renderArrowsWhenDisabled={false}
@@ -98,6 +99,7 @@ function Solucao() {
                     </div>
                 ))}
             </Carousel>
+        </div>
         </>
     );
 }
