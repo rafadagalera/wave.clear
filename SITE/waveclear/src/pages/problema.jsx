@@ -25,7 +25,7 @@ function Problema() {
             title: "Seção 3",
             subtitle: "Lorem Ipsum dolor sit amet",
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, turpis et luctus varius, sapien lacus porttitor sapien, sit amet tempus nisi justo et est. Curabitur pharetra ultricies pulvinar. Cras sit amet dapibus sem, nec hendrerit diam. Nulla eu diam ultrices, placerat ipsum at, posuere ligula. Etiam accumsan neque quis nisl rhoncus, et malesuada nisi facilisis. Fusce aliquet elit sit amet mauris hendrerit, eget aliquet turpis pulvinar. Ut vulputate scelerisque lacus, id placerat nisi sodales eu. Praesent vitae blandit est. Vivamus sed augue id justo interdum aliquam et vel mauris. Mauris lacinia pharetra diam id pretium.",
-            bgColor: 'bg-quaternary-blue',
+            bgColor: 'bg-primary-white',
             img: ocean3
         }
     ]
