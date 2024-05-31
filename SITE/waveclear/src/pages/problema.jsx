@@ -1,48 +1,51 @@
 import ocean1 from '../assets/ocean.png'
-import ocean2 from '../assets/ocean2.jpg'
+import ocean2 from '../assets/poluicao.jpg'
 import ocean3 from '../assets/ocean3.jpg'
 
 function Problema() {
     const sections = [
         {
             id: 1,
-            title: "Seção 1",
-            subtitle: "Lorem Ipsum dolor sit amet",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, turpis et luctus varius, sapien lacus porttitor sapien, sit amet tempus nisi justo et est. Curabitur pharetra ultricies pulvinar. Cras sit amet dapibus sem, nec hendrerit diam. Nulla eu diam ultrices, placerat ipsum at, posuere ligula. Etiam accumsan neque quis nisl rhoncus, et malesuada nisi facilisis. Fusce aliquet elit sit amet mauris hendrerit, eget aliquet turpis pulvinar. Ut vulputate scelerisque lacus, id placerat nisi sodales eu. Praesent vitae blandit est. Vivamus sed augue id justo interdum aliquam et vel mauris. Mauris lacinia pharetra diam id pretium.",
-            bgColor: 'bg-secondary-blue',
+            title: "A importância dos oceanos.",
+            text:  "Os oceanos são os pulmões da Terra, sustentando a vida em nosso planeta de maneiras que muitas vezes subestimamos. Cobrindo mais de 70% da superfície da Terra, esses vastos corpos de água desempenham um papel crítico na regulação do clima global, na manutenção da biodiversidade e na sustentação de ecossistemas vitais. Além de sua imensidão física, os oceanos também abrigam uma riqueza incrível de vida, desde as mais minúsculas formas de vida até as majestosas baleias. Sua importância não se limita apenas ao ambiente marinho, mas também tem impactos significativos na economia global, na segurança alimentar e nas culturas humanas ao redor do mundo. Em última análise, os oceanos são essenciais para a saúde e o bem-estar de toda a vida na Terra, e protegê-los é uma responsabilidade que todos compartilhamos.",
+            bgColor: 'bg-gradient-to-b from-primary-white to-primary-lightblue',
             img: ocean1
         },
         {
             id: 2,
-            title: "Seção 2",
-            subtitle: "Lorem Ipsum dolor sit amet",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, turpis et luctus varius, sapien lacus porttitor sapien, sit amet tempus nisi justo et est. Curabitur pharetra ultricies pulvinar. Cras sit amet dapibus sem, nec hendrerit diam. Nulla eu diam ultrices, placerat ipsum at, posuere ligula. Etiam accumsan neque quis nisl rhoncus, et malesuada nisi facilisis. Fusce aliquet elit sit amet mauris hendrerit, eget aliquet turpis pulvinar. Ut vulputate scelerisque lacus, id placerat nisi sodales eu. Praesent vitae blandit est. Vivamus sed augue id justo interdum aliquam et vel mauris. Mauris lacinia pharetra diam id pretium.",
-            bgColor: 'bg-tertiary-blue',
+            title: "A poluilção dos oceanos é um problema grave.",
+            text: "A poluição dos oceanos é um problema sério que afeta negativamente os ecossistemas marinhos, a vida selvagem, a saúde humana e a economia global. Substâncias tóxicas como produtos químicos industriais, pesticidas, metais pesados e plásticos contaminam os habitats marinhos, causando danos aos organismos e afetando seu ciclo de vida, reprodução e saúde geral. Além disso, a poluição leva à degradação de habitats costeiros, recifes de coral e áreas de reprodução de espécies marinhas, resultando na perda de biodiversidade e na diminuição da produtividade dos ecossistemas marinhos. A poluição oceânica também tem impactos negativos na saúde humana, pois a ingestão de frutos do mar contaminados por substâncias tóxicas pode causar doenças e problemas de saúde. Além disso, a poluição dos oceanos tem consequências econômicas significativas, afetando indústrias como pesca, turismo e transporte marítimo. É crucial tomar medidas urgentes para reduzir e prevenir a poluição dos oceanos, protegendo assim esses ecossistemas vitais para a vida na Terra.",
+            bgColor: 'bg-gradient-to-b from-primary-lightblue to-primary-white',
             img: ocean2
         },
         {
             id: 3,
-            title: "Seção 3",
-            subtitle: "Lorem Ipsum dolor sit amet",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis, turpis et luctus varius, sapien lacus porttitor sapien, sit amet tempus nisi justo et est. Curabitur pharetra ultricies pulvinar. Cras sit amet dapibus sem, nec hendrerit diam. Nulla eu diam ultrices, placerat ipsum at, posuere ligula. Etiam accumsan neque quis nisl rhoncus, et malesuada nisi facilisis. Fusce aliquet elit sit amet mauris hendrerit, eget aliquet turpis pulvinar. Ut vulputate scelerisque lacus, id placerat nisi sodales eu. Praesent vitae blandit est. Vivamus sed augue id justo interdum aliquam et vel mauris. Mauris lacinia pharetra diam id pretium.",
-            bgColor: 'bg-primary-white',
+            title: "Como os lixos chegam ao oceano.",
+            
+            text: "Os oceanos são os pulmões da Terra, sustentando a vida em nosso planeta de maneiras que muitas vezes subestimamos. Cobrindo mais de 70% da superfície da Terra, esses vastos corpos de água desempenham um papel crítico na regulação do clima global, na manutenção da biodiversidade e na sustentação de ecossistemas vitais. Além de sua imensidão física, os oceanos também abrigam uma riqueza incrível de vida, desde as mais minúsculas formas de vida até as majestosas baleias. Sua importância não se limita apenas ao ambiente marinho, mas também tem impactos significativos na economia global, na segurança alimentar e nas culturas humanas ao redor do mundo. Em última análise, os oceanos são essenciais para a saúde e o bem-estar de toda a vida na Terra, e protegê-los é uma responsabilidade que todos compartilhamos.",
+            bgColor: 'bg-gradient-to-b from-primary-white via-primary-lightblue to-primary-white',
             img: ocean3
         }
     ]
     return (
         <>
             <div className="flex flex-col">
-                {sections.map((section) => (
+                {sections.map((section ) => (
                     <div key={section.id} className={`w-screen h-[1017px] ${section.bgColor} flex justify-between`}>
-                        <div>
-                            <h2 className='mt-[300px] ml-5 text-5xl font-bold mx-auto'>{section.title}</h2>
-                            <div className='mt-[200px] grid grid-cols-2 gap-5 grid-rows-1'>
-                                <h3 className='row-start-1'>{section.subtitle}</h3>
-                                <p className='col-start-1'>{section.text}</p>
+                        <div className='w-3/4 m-auto mb-32'>
+                            <h2 className='mt-[150px] ml-5 text-5xl font-bold mx-auto'>{section.title}</h2>
+                            <div className='mt-[80px] ml-5 justify-center text-justify grid grid-cols-2 gap-5 grid-rows-1'>
+
+                                <div className='w-11/12 text-lg tracking-wide'>
+                                    <h3 className='row-start-1'>{section.subtitle}</h3>
+
+                                    <p className='col-start-1'>{section.text}</p>
+                                </div>
+                                
                                 <img
-                                    className='w-[600px] h-[423px] object-cover '
+                                    className='w-[600px] h-[423px] object-cover rounded- '
                                     src={section.img}
-                                    alt={`imagem do oceano da seçao ${section.title}`} />
+                                    alt={`imagem do oceano da seção ${section.title}`} />
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,8 @@
 function Previsao() {
     return ( 
         <>
-        <h1>previsao</h1>
+            <h1>previsao</h1>
+            
         </>
      );
 }
