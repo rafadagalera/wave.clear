@@ -29,7 +29,8 @@ function Previsao() {
   };
 
   return (
-    <div className="rounded-xl flex flex-col h- m-auto items-center justify-center bg-gray-900 text-white">
+    <div className='h-screen md:w-2/3 md:m-auto md:mt-32'>
+         <div className="rounded-xl flex flex-col w-80 mt-10 mb-20 m-auto items-center justify-center bg-gray-900 text-white">
       <form onSubmit={handleSubmit} className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
         <div className="mb-4">
           <label htmlFor="latitude" className="block text-gray-300 text-sm font-bold mb-2">Latitude:</label>
@@ -63,6 +64,7 @@ function Previsao() {
           )}
         </div>
       )}
+    </div>
     </div>
   );
 }
