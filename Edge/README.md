@@ -19,10 +19,10 @@ Materiais Necessários
 
 Instruções de montagem:
 
-Conecte o pino VCC do sensor ultrassônico ao pino 5V do Esp32.
-Conecte o pino GND do sensor ultrassônico ao pino GND do Esp32.
-Conecte o pino Trig do sensor ultrassônico ao pino digital 12 do Esp32.
-Conecte o pino Echo do sensor ultrassônico ao pino digital 14 do Esp32.
+- Conecte o pino VCC do sensor ultrassônico ao pino 5V do Esp32.
+- Conecte o pino GND do sensor ultrassônico ao pino GND do Esp32.
+- Conecte o pino Trig do sensor ultrassônico ao pino digital 12 do Esp32.
+- Conecte o pino Echo do sensor ultrassônico ao pino digital 14 do Esp32.
 
 Configuração do dispositivo:
 Primeiro, você precisa baixar e instalar a IDE do Arduino no seu computador.
