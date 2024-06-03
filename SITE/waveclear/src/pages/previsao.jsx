@@ -52,9 +52,9 @@ function Previsao() {
   };
 
   return (
-    <div className="rounded-xl flex flex-col h- m-auto items-center justify-center bg-gray-900 text-white">
-      <div id="map" ref={mapRef} className="w-full h-64 mb-4"></div>
-      <form onSubmit={handleSubmit} className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+    <div className="flex rounded-xl flex flex-col w-screen -screen items-center justify-center bg-gray-900 text-white">
+      <div id="map" ref={mapRef} className="w-full h-full"></div>
+      <form onSubmit={handleSubmit} className="bg-gray-800 mt-10 p-8 rounded-lg shadow-lg text-center">
         <div className="mb-4">
           <label htmlFor="latitude" className="block text-gray-300 text-sm font-bold mb-2">Latitude:</label>
           <input type="text" placeholder='Insira a latitude' id="latitude" value={latitude} onChange={(e) => setLatitude(e.target.value)} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
