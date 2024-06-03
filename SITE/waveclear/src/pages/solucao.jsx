@@ -37,13 +37,8 @@ function Solucao() {
     ]
     return (
         <>
-<<<<<<< HEAD
-        <div className='w-full h-screen bg-secondary-blue'>
-            <h2>wave.clear visa mudar a forma como pensamos no combate à poluição marítma</h2>
-=======
         <div className='w-full md:w-3/4 md:m-auto h-screen bg-primary-white'>
             <h1 className='text-6xl p-12 pb-0 md:mt-20 text-teal-700'>A nossa <b>solução</b></h1>
->>>>>>> taiki-tests
             <Carousel
                 additionalTransfrom={0}
                 arrows
