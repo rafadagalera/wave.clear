@@ -10,7 +10,7 @@ function Navbar() {
                 <li className='ml-3'><Link to='/'><b>HOME</b></Link></li>
                 <li className='ml-3'><Link to='/problema'><b>PROBLEMA</b></Link></li>
                 <li className='ml-3'><Link to='/solucao'><b>SOLUÇÃO</b></Link></li>
-                <li className='ml-3'><Link to='/previsao'><b>SOLUÇÃO</b></Link></li>
+                <li className='ml-3'><Link to='/previsao'><b>PREVISÃO</b></Link></li>
                 
             </ul>
             <ul className='hidden text-center mr-auto text-primary-white md:flex md:gap-5 md:flex-col md:mt-10 md:pl-[6px] md:h-screen'>
