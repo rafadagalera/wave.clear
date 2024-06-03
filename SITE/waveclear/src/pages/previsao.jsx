@@ -1,10 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
 function Previsao() {
   const [latitude, setLatitude] = useState('');
   const [longitude, setLongitude] = useState('');
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    if (mapRef.current) {
+      const map = L.map(mapRef.current).setView([0, 0], 2);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      map.on('click', (e) => {
+        const { lat, lng } = e.latlng;
+        setLatitude(lat.toFixed(4));
+        setLongitude(lng.toFixed(4));
+      });
+
+      return () => {
+        map.remove();
+      };
+    }
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -30,6 +53,7 @@ function Previsao() {
 
   return (
     <div className="rounded-xl flex flex-col h- m-auto items-center justify-center bg-gray-900 text-white">
+      <div id="map" ref={mapRef} className="w-full h-64 mb-4"></div>
       <form onSubmit={handleSubmit} className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
         <div className="mb-4">
           <label htmlFor="latitude" className="block text-gray-300 text-sm font-bold mb-2">Latitude:</label>
