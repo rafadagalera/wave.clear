@@ -31,16 +31,16 @@ function Problema() {
             <div className="flex flex-col">
                 {sections.map((section ) => (
                     <div key={section.id} className={`w-screen md:h-auto ${section.bgColor} flex justify-between`}>
-                        <div className='w-full md:w-3/4 m-auto mb-32'>
-                            <h2 className='mt-[150px] md:mt-16 ml-5 text-5xl md:text-3xl font-bold mx-auto'>{section.title}</h2>
+                        <div className='w-full md:w-3/4 m-auto mb-3'>
+                            <h2 className='mt-14 md:mt-16 ml-5 text-5xl md:text-3xl font-bold mx-auto  text-teal-700'>{section.title}</h2>
                             <div className='mt-[80px] md:mt-8 ml-5 md:ml-0 justify-center text-justify grid md:grid-cols-2 gap-5 grid-rows-1'>
 
-                                <div className='w-full md:w-11/12 text-lg md:text-base tracking-wide'>
-                                    <p className='md:col-start-1 mr-12'>{section.text}</p>
+                                <div className='w-4/5 text-center items-center m-auto md:w-11/12 text-base w md:text-base tracking-wide'>
+                                    <p className='md:col-start-1 '>{section.text}</p>
                                 </div>
                                 
                                 <img
-                                    className='pt-10 max-w-[600px] min-h-[300px] object-cover '
+                                    className=' m-auto max-w-96 md:min-h-[300px] object-cover '
                                     src={section.img}
                                     alt={`imagem do oceano da seção ${section.title}`} />
                             </div>
