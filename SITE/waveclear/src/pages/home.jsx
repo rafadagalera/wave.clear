@@ -25,11 +25,12 @@ function Home() {
         <section className='bg-white'>   
 
             <div className='flex p-10 flex-col gap-4 mt-5 md:w-3/4 md:m-auto'>
-                <h1 className='text-6xl m-auto md:mt-20 text-teal-700'>Nós somos a <b>wave.clear</b></h1>
-                <p className='max-w-3xl m-auto mt-6 text-center '>A Wave.Clear é uma empresa comprometida em diminuir significativamente a poluição por plásticos nos oceanos, oferecend
-                o soluções acessíveis e inovadoras. Nosso foco está na criação de tecnologias sustentáveis e acessíveis, garantindo que indivíduos, comunidades e emp
-                resas possam participar ativamente da proteção dos ecossistemas marinhos. Cada iniciativa da Wave.Clear é projetada para gerar um impacto pos
-                itivo tangível, promovendo não apenas a redução da poluição por plásticos, mas também a conservação dos recursos oceânicos para as gerações futuras.
+                <div className='flex justify-center md:max-h-40 max-h-20 '>
+                    <h1 className='md:text-6xl mt-5 text-2xl md:mt-11 md:mr-2  text-teal-700'>Nós somos a <b>wave.clear</b></h1>
+                    <img className="md:w-40 w-24 " src="src\assets\b8jIDQs.png" alt="" />
+                </div>
+                
+                <p className='max-w-3xl m-auto mt-6 text-center '>A Wave.Clear é uma empresa comprometida em diminuir significativamente a poluição por plásticos nos oceanos, oferecendo soluções acessíveis e inovadoras. Nosso foco está na criação de tecnologias sustentáveis e acessíveis, garantindo que indivíduos, comunidades e empresas possam participar ativamente da proteção dos ecossistemas marinhos. Cada iniciativa da Wave.Clear é projetada para gerar um impacto positivo tangível, promovendo não apenas a redução da poluição por plásticos, mas também a conservação dos recursos oceânicos para as gerações futuras.
                 </p>
             </div>
             <div className=" p-10 flex flex-col gap-8 md:flex-row md:w-3/4 md:m-auto md:mt-20">
