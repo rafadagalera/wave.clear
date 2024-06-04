@@ -30,7 +30,7 @@ function Problema() {
         <>
             <div className="flex flex-col">
                 {sections.map((section ) => (
-                    <div key={section.id} className={`w-screen md:h-auto ${section.bgColor} flex justify-between`}>
+                    <div key={section.id} className={` md:h-auto ${section.bgColor} flex justify-between`}>
                         <div className='w-full md:w-3/4 m-auto mb-3'>
                             <h2 className='mt-14 md:mt-16 ml-5 text-5xl md:text-3xl font-bold mx-auto  text-teal-700'>{section.title}</h2>
                             <div className='mt-[80px] md:mt-8 ml-5 md:ml-0 justify-center text-justify grid md:grid-cols-2 gap-5 grid-rows-1'>
