@@ -13,7 +13,7 @@ function Problema() {
         },
         {
             id: 2,
-            title: "A poluilção dos oceanos é um problema grave.",
+            title: "A poluição dos oceanos é um problema grave.",
             text: "A poluição dos oceanos é um problema sério que afeta negativamente os ecossistemas marinhos, a vida selvagem, a saúde humana e a economia global. Substâncias tóxicas como produtos químicos industriais, pesticidas, metais pesados e plásticos contaminam os habitats marinhos, causando danos aos organismos e afetando seu ciclo de vida, reprodução e saúde geral. Além disso, a poluição leva à degradação de habitats costeiros, recifes de coral e áreas de reprodução de espécies marinhas, resultando na perda de biodiversidade e na diminuição da produtividade dos ecossistemas marinhos. A poluição oceânica também tem impactos negativos na saúde humana, pois a ingestão de frutos do mar contaminados por substâncias tóxicas pode causar doenças e problemas de saúde. Além disso, a poluição dos oceanos tem consequências econômicas significativas, afetando indústrias como pesca, turismo e transporte marítimo. É crucial tomar medidas urgentes para reduzir e prevenir a poluição dos oceanos, protegendo assim esses ecossistemas vitais para a vida na Terra.",
             bgColor: 'bg-gradient-to-b from-primary-lightblue to-primary-white',
             img: ocean2
