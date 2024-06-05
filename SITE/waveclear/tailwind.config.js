@@ -2,6 +2,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+
+      backgroundImage: {
+        "bg-home" : "url(src/assets/oce.jpg)"
+      },
       colors: {
         primary: {
           "50": "#eff6ff",

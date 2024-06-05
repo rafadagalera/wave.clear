@@ -5,8 +5,7 @@ import name from '../assets/name.png'
 
 function Header() {
     return (
-        <div className="bg-slate-200
-         flex justify-between items-center w-screen md:h-full md:fixed md:flex md:flex-col md:shadow-md md:w-44">
+        <div className=" bg-primary-100 flex justify-between items-center w-screen md:h-full md:fixed md:flex md:flex-col  md:w-52">
             <img className="md:hidden md:mt-24 w-20 h-20" src={fullLogo} alt="logo completo wave.clear"/>
             <img className="hidden md:mt-4 md:flex md:pt-3" src={name} alt="name wave.clear"/>
             <Navbar />

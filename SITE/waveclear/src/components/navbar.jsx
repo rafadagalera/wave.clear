@@ -36,12 +36,12 @@ function Navbar() {
             {/* Sidebar */}
             <aside
                 id="cta-button-sidebar"
-                className={`ml-20 md:ml-16 fixed rounded-lg md:top-0 top-48 -left-16 md:bg-transparent bg-slate-300 opacity-90 z-40 w-44 md:h-screen transition-transform ${
+                className={`ml-20 md:ml-16 fixed md:top-0 top-48 -left-16 md:bg-transparent bg-slate-300 opacity-90 md:z-40 md:w-64  md:h-screen transition-transform ${
                     sidebarOpen ? '' : '-translate-x-full'
                 } sm:translate-x-0`}
                 aria-label="Sidebar"
             >
-                <div className="h-full px-3 py-4 md:mt-64 overflow-y-auto bg- dark:bg-gray-800">
+                <div className="h-full px-3 py-4 md:mt-64 overflow-y-auto ">
                    
                     <div className="justify-end">
                         <button
@@ -72,7 +72,7 @@ function Navbar() {
                         <li>
                             <a
                                 href="/"
-                                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                                className="flex items-center p-2 md:w-32 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                             >
                                 <svg
                                     className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -93,7 +93,7 @@ function Navbar() {
                         <li>
                             <a
                                 href="/problema"
-                                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                                className="flex items-center md:w-32 p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                             >
                                 <svg
                                     className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -113,7 +113,7 @@ function Navbar() {
                         <li>
                             <a
                                 href="/solucao"
-                                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                                className="flex items-center p-2 md:w-32 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                             >
                                 <svg
                                     className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -132,7 +132,7 @@ function Navbar() {
                         <li>
                             <a
                                 href="/previsao"
-                                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                                className="flex items-center p-2 md:w-32 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                             >
                                 <svg
                                     className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -152,7 +152,7 @@ function Navbar() {
                         <li>
                             <a
                                 href="/equipe"
-                                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                                className="flex items-center p-2 md:w-32 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                             >
                                 <svg
                                     className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -171,7 +171,7 @@ function Navbar() {
                         <li>
                             <a
                                 href="/contato"
-                                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                                className="flex items-center p-2 md:w-32 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
                             >
                                 <svg
                                     className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -186,6 +186,20 @@ function Navbar() {
                                     <Link to='/contato'>Contato</Link>
                                 </span>
                             </a>
+                        </li>
+                        <li>
+                        <div className=''>
+                        <GoogleLogin
+    className="w-40 h-10" // Adjust dimensions as needed using Tailwind's utility classes
+    onSuccess={credentialResponse => {
+        console.log(credentialResponse);
+    }}
+    onError={() => {
+        console.log('Login Failed');
+    }}
+/>
+
+                </div>
                         </li>
                     </ul>
                 </div>
