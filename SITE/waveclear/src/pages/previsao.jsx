@@ -52,8 +52,8 @@ function Previsao() {
   };
 
   return (
-    <div className="rounded-xl md:mb-24 flex flex-col md:h-screen m-auto items-center justify-center bg-gray-700 text-white">
-      <div id="map" ref={mapRef} className="w-full md:h-[650px] md:w-[1850px] h-64 mb-4"></div>
+    <div className="rounded-xl md:mb-24 flex flex-col md:h-screen m-auto md:ml-28 items-center justify-center bg-gray-700 text-white">
+      <div id="map" ref={mapRef} className="w-full md:h-[650px] md:w-[1850px] z-0 h-64 mb-4"></div>
       <div className='md:flex'>
 
         <div className='w-80 md:mr-32 md:text-justify mt-10 text-center'>

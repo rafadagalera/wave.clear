@@ -36,7 +36,7 @@ function Navbar() {
             {/* Sidebar */}
             <aside
                 id="cta-button-sidebar"
-                className={`ml-20 md:ml-16 fixed md:top-0 top-48 -left-16 md:bg-transparent bg-slate-300 opacity-90 md:z-40 md:w-64  md:h-screen transition-transform ${
+                className={`ml-20 md:ml-16 fixed md:top-0 top-48 -left-16 md:bg-transparent bg-slate-300 opacity-90 z-40 md:w-64  md:h-screen transition-transform ${
                     sidebarOpen ? '' : '-translate-x-full'
                 } sm:translate-x-0`}
                 aria-label="Sidebar"
