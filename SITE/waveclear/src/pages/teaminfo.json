@@ -1,0 +1,19 @@
+{
+    "team_members": [
+      {
+        "id": 553117,
+        "img": "https://media.licdn.com/dms/image/D4E03AQHA5bVjCd6pEQ/profile-displayphoto-shrink_800_800/0/1695610485408?e=1723075200&v=beta&t=zkfkl8FT5YdwTY_JbZonjuCE3jPAXRYSGDahgtj9CPM",
+        "nome": "Rafael Nascimento",
+        "curso": "Engenharia de Software",
+        "linkedin": "https://www.linkedin.com/in/devdagalera/"
+      },
+      {
+        "id": 554226,
+        "img" : "https://media.licdn.com/dms/image/D4D03AQEt-87icdyWAQ/profile-displayphoto-shrink_800_800/0/1711988061323?e=1723075200&v=beta&t=3Sx09PqrTHc9zIT8su1aIsKC-Tb8NEX0AYe_w2iW5yw",
+        "nome": "Vinicius Taiki",
+        "curso": "Engenharia de Software",
+        "linkedin": "https://www.linkedin.com/in/taikitaiki/"
+      }
+    ]
+  }
+  
