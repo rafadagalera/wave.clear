@@ -57,9 +57,7 @@ function Previsao() {
       <div className='md:flex'>
 
         <div className='w-80 md:mr-32 md:text-justify mt-10 text-center'>
-          <p>Aqui você poderá verificar se haverá uma tempestade em qualquer lugar do mundo. Basta clicar no local desejado no mapa e clicar enviar. Você também pode inserir a latitude e longitude manualmente se preferir!
-            Após isso, você receberá um texto na tela indicando dados como temperatura, descrição meteorológica e velocidade do vento, assim como nivel de precipitação caso esteja chovendo. O aletar é emitido na tela somente 
-            se os níveis forem preocupantes.
+          <p>Aqui você poderá verificar se haverá uma tempestade em qualquer lugar do mundo. Basta clicar no local desejado no mapa e clicar em enviar. Você também pode inserir a latitude e longitude manualmente, se preferir! Após isso, você receberá um texto na tela indicando dados como temperatura, descrição meteorológica e velocidade do vento, assim como nível de precipitação caso esteja chovendo. O alerta é emitido na tela somente se os níveis forem preocupantes.
           </p>
         </div>
 
