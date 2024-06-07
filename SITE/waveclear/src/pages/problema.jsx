@@ -13,7 +13,7 @@ function Problema() {
         },
         {
             id: 2,
-            title: "A poluilção dos oceanos é um problema grave.",
+            title: "A poluição dos oceanos é um problema grave.",
             text: "A poluição dos oceanos é um problema sério que afeta negativamente os ecossistemas marinhos, a vida selvagem, a saúde humana e a economia global. Substâncias tóxicas como produtos químicos industriais, pesticidas, metais pesados e plásticos contaminam os habitats marinhos, causando danos aos organismos e afetando seu ciclo de vida, reprodução e saúde geral. Além disso, a poluição leva à degradação de habitats costeiros, recifes de coral e áreas de reprodução de espécies marinhas, resultando na perda de biodiversidade e na diminuição da produtividade dos ecossistemas marinhos. A poluição oceânica também tem impactos negativos na saúde humana, pois a ingestão de frutos do mar contaminados por substâncias tóxicas pode causar doenças e problemas de saúde. Além disso, a poluição dos oceanos tem consequências econômicas significativas, afetando indústrias como pesca, turismo e transporte marítimo. É crucial tomar medidas urgentes para reduzir e prevenir a poluição dos oceanos, protegendo assim esses ecossistemas vitais para a vida na Terra.",
             bgColor: 'bg-gradient-to-b from-primary-lightblue to-primary-white',
             img: ocean2
@@ -21,7 +21,7 @@ function Problema() {
         {
             id: 3,
             title: "Como os lixos chegam ao oceano.",
-            text: "Os oceanos são os pulmões da Terra, sustentando a vida em nosso planeta de maneiras que muitas vezes subestimamos. Cobrindo mais de 70% da superfície da Terra, esses vastos corpos de água desempenham um papel crítico na regulação do clima global, na manutenção da biodiversidade e na sustentação de ecossistemas vitais. Além de sua imensidão física, os oceanos também abrigam uma riqueza incrível de vida, desde as mais minúsculas formas de vida até as majestosas baleias. Sua importância não se limita apenas ao ambiente marinho, mas também tem impactos significativos na economia global, na segurança alimentar e nas culturas humanas ao redor do mundo. Em última análise, os oceanos são essenciais para a saúde e o bem-estar de toda a vida na Terra, e protegê-los é uma responsabilidade que todos compartilhamos.",
+            text: "Os lixos chegam aos oceanos de diversas maneiras, sendo as chuvas e tempestades um dos principais vetores. Em áreas urbanas, resíduos mal descartados nas ruas e calçadas são levados pelas águas pluviais para os sistemas de esgoto e drenagem. Durante tempestades, a intensidade da água aumenta, transportando uma quantidade ainda maior de lixo para os rios. Esses rios, por sua vez, deságuam no oceano, carregando consigo uma vasta quantidade de detritos. Além disso, enchentes exacerbam esse problema ao arrastar lixo diretamente das margens e terrenos alagados para os cursos d'água. Assim, as precipitações atuam como uma espécie de condutor, conectando o lixo urbano às vias fluviais e, eventualmente, aos oceanos, onde causam sérios danos ambientais e à vida marinha.",
             bgColor: 'bg-gradient-to-b from-primary-white via-primary-lightblue to-primary-white',
             img: ocean3
         }
